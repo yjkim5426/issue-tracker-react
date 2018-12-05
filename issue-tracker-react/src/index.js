@@ -1,12 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class IssueTracker extends React.Component {
+  render() {
+    return(
+      <div>
+        <div class="alert alert-primary" role="alert">
+          A simple primary alert—check it out!
+        </div>
+      </div>
+    )
+  }
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class IssueCard extends React.Component {
+  render() {
+    return(
+      <h1>this is a IssueCard component</h1>
+    )
+  }
+}
+
+ReactDOM.render(<IssueTracker />, document.getElementById("root"));
